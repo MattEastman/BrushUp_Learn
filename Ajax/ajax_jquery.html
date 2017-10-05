@@ -1,0 +1,9 @@
+$.ajax({
+  url: 'send-ajax-data.php',
+})
+.done(function(res) {
+  console.log(res);
+})
+.fail(function(err) {
+  console.log('Error: ' + err.status);
+});
